@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; 
+}
+
+#calendar {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px; 
+}
+
+.nav-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.iller-container {
+    margin: 0 40px;
+}
+
+#iller {
+    font-size: 1.5em;
+}
+
+.nav-button:hover {
+    background-color: darkred;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.today {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#month-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.aylarbtn {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 0.8em;
+    margin: 2px;
+    position: relative;
+}
+
+.selected {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
